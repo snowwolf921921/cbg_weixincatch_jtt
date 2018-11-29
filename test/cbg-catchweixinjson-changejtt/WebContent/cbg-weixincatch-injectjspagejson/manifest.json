@@ -1,0 +1,23 @@
+{"name": "a cbg catch list",
+	"version": "0.0.2",
+	"background": { "scripts": ["jquery-2.0.0.min.js", "background.js"] },
+	"browser_action": {
+		"default_icon": {
+			"19": "cnblogs_19.png",
+			"38": "cnblogs_38.png"
+		},
+		"default_title": "information",
+		"default_popup": "popup.html"
+	},
+	"permissions" : ["https://*.weixin.qq.com/*","downloads","tabs","webNavigation","webRequest","storage"],
+	"content_scripts":[{
+		"matches":["https://*.weixin.qq.com/*"],
+		"all_frames": true,
+		"js":["jquery-2.0.0.min.js", "content_script2.js"]
+	}],
+	"web_accessible_resources": ["inject.js"],
+	"manifest_version": 2
+}
+
+
+	

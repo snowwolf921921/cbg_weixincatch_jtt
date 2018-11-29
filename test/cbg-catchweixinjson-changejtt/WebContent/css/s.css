@@ -1,0 +1,44 @@
+.sdiv {
+	padding: 0px;
+	height: 300px;
+	left: 0px;
+	top: 168px;
+	width: 637px;
+	background: #fff;
+	border-color: #d0d0d0;
+	color: #404040;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana,
+		sans-serif;
+	border-width: 1px;
+	border-style: solid;
+	margin: auto;
+	text-align: center;
+}
+
+.titlediv {
+	padding: 5px;
+	height: 60px;
+	width: initial;
+	left: 0px;
+	top: 0px;
+	background-color: #9cc96b;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+}
+
+.gray {
+	color: gray;
+}
+
+.innerinput {
+	width: inherit
+}
+
+.table {
+	padding-left: 10px;
+	width: 637px;
+}
+}
