@@ -56,7 +56,8 @@ function pBStart(){
 }
 function pBResume(){
 	var maxDownloadConfig=Number($("#maxDownloadConfig").val());
-	tSendMsgToBg("pupupResume-withConfig",{maxD:maxDownloadConfig,dConfig:getDisplayConfig(),time:getTime()});
+	var startDownloadConfig=Number($("#startDownloadConfig").val());
+	tSendMsgToBg("pupupResume-withConfig",{maxD:maxDownloadConfig,startD:startDownloadConfig,dConfig:getDisplayConfig(),time:getTime()});
 }
 
 function getDisplayConfig(){

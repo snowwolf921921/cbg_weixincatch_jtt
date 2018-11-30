@@ -50,8 +50,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest) {
 	    startDownloadConfig=request.data.startD;
 	    displayConfig=request.data.dConfig;
 	    timeP=request.data.time.p;
-		timeI=request.data.time.i;
-		timeRnd=request.data.time.rnd;
+//		timeI=request.data.time.i;
+//		timeRnd=request.data.time.rnd;
+	    totalInfoAndCurrentDownloadInfo.maxP=maxDownloadConfig;
+	    totalInfoAndCurrentDownloadInfo.currentDPageIndex=startDownloadConfig;
+	    
 	    if(checkMax()){
 	    	nextPageEnableFlag = true;
 	    	tSendMsgToCS("msg-catch&downloadThisItem-withTotalInfo",totalInfoAndCurrentDownloadInfo);
