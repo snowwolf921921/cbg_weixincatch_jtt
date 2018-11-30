@@ -26,7 +26,7 @@ function getData() {
 	$("#startDownloadConfig").val(chrome.extension.getBackgroundPage().startDownloadConfig>0?chrome.extension.getBackgroundPage().startDownloadConfig:1);
 	$("#timeP").val(chrome.extension.getBackgroundPage().timeP?chrome.extension.getBackgroundPage().timeP/1000:2);
 //	$("#timeI").val(chrome.extension.getBackgroundPage().timeI?chrome.extension.getBackgroundPage().timeI/1000:15);
-	$("#timeRnd").val(chrome.extension.getBackgroundPage().timeRnd?chrome.extension.getBackgroundPage().timeRnd/1000:9);
+	$("#timeRnd").val(chrome.extension.getBackgroundPage().timeRnd?chrome.extension.getBackgroundPage().timeRnd/1000:1);
 	$("#messageD").text("keyWord:"+chrome.extension.getBackgroundPage().totalInfoAndCurrentDownloadInfo.keyword+"; 共"+chrome.extension.getBackgroundPage().totalInfoAndCurrentDownloadInfo.totalItemsAmount+"条"); 
 	
 }

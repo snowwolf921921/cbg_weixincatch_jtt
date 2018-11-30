@@ -124,7 +124,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest) {
 
 function checkMax(){
 //没到最大返回true
-	return (maxDownloadConfig==-1||maxDownloadConfig=="")?true:totalInfoAndCurrentDownloadInfo.currentDItemIndexInTotal<=maxDownloadConfig
+	return (maxDownloadConfig==-1||maxDownloadConfig=="")?true:totalInfoAndCurrentDownloadInfo.currentDPageIndex<=maxDownloadConfig
 }
 function bStop() {
 	nextPageEnableFlag=false;
