@@ -13,10 +13,10 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 function getData() {                          
 	var totalData = chrome.extension.getBackgroundPage().totalData;     
 	if(totalData.displayData!=null&&totalData.displayData.length){
-//		$("#divResult")[0].innerHTML=totalData.displayData;
 		$("#testarea").text(totalData.displayData);
-//		$("#testarea")[0].innerHTML=totalData.displayData;
-//		document.getElementById('divResult').innerHTML=resultText;
+		var scrollTop = $("#testarea")[0].scrollHeight;
+	    $("#testarea").scrollTop(scrollTop);
+
 		$("#message").text(totalData.downloadStatus);
 //		$("#message").text("正在下载"+chrome.extension.getBackgroundPage().totalInfoAndCurrentDownloadInfo.currentDItemIndexInTotal+"-"+chrome.extension.getBackgroundPage().totalInfoAndCurrentDownloadInfo.cPicName+"");
 	}else{
